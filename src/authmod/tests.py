@@ -5,8 +5,8 @@ from django.contrib.contenttypes.models import ContentType
 from django.test import TestCase
 from faker import Faker
 
-from users.tests import create_test_user
 from authmod.models import Role
+from users.tests import create_test_user
 
 faker = Faker()
 
