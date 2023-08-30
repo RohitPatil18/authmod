@@ -12,7 +12,7 @@ class UserManager(BaseUserManager):
             raise ValueError("Users must have an email address")
 
         password = kwargs.pop("password", None)
-        if not email_address:
+        if not password:
             raise ValueError("Users must have a password")
 
         user = self.model(email_address=self.normalize_email(email_address), **kwargs)
